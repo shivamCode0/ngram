@@ -10,7 +10,7 @@ First, in [ngram.ipynb](/ngram.ipynb), the whole model is trained in PyTorch and
 
 ## About the Model
 
-This is my own implementation based on the bigram model, but configurable to use n previous tokens. The model has a second hyperparameter $n \ge 3$ which is the number of tokens the model will look at. First, it vectorizes the tokens using an embedding. Next, it concatenates all $n$ embeddings into a vector of size $n \times \textrm{embedding\_size}$. Next, it is passed through an intermediate fully-connected linear layer followed by ReLU activation and $0.2$ dropout. Finally, it is then passed through a linear fully-connected layer to get the logits. This model is trained on the [Tiny Shakespeare](https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt) dataset, however it can be trained on any text dataset.
+This is my own implementation based on the bigram model, but configurable to use n previous tokens. The model has a second hyperparameter $n \ge 3$ which is the number of tokens the model will look at. First, it vectorizes the tokens using an embedding. Next, it concatenates all $n$ embeddings into a vector of size $n \ \times$ $`\text{embedding\_size}`$. Next, it is passed through an intermediate fully-connected linear layer followed by ReLU activation and $0.2$ dropout. Finally, it is then passed through a linear fully-connected layer to get the logits. This model is trained on the [Tiny Shakespeare](https://raw.githubusercontent.com/karpathy/char-rnn/master/data/tinyshakespeare/input.txt) dataset, however it can be trained on any text dataset.
 
 ### Model Architecture:
 
