@@ -1,3 +1,7 @@
+<!-- Image -->
+
+![](model.svg "Model Architecture")
+
 # Mini N-gram Model Text Generation
 
 This project was inspired from the bigram model from the tutorial [Let's build GPT: from scratch, in code, spelled out.](https://www.youtube.com/watch?v=kCc8FmEb1nY&t=2064s&ab_channel=AndrejKarpathy) by Andrej Karpathy. This code also is in PyTorch instead of TensorFlow unlike some of my other projects.
